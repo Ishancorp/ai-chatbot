@@ -104,7 +104,7 @@ function PromptForm(props) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer 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`,// Authorization: `Bearer ${API_KEY}`
+                    Authorization: `Bearer process.env.AI_KEY`,// Authorization: `Bearer ${API_KEY}`
                 },
                 body: JSON.stringify(data),
             });
